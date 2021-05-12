@@ -5,6 +5,16 @@ And supplementary code to the [Appchemy webapp](https://github.com/sarmientoj24/
 
 **Note:** The code was created back in 2019. Code may not work now because of versioning.
 
+# Repository Guide
+- vae.py: contains the VAE class 
+- train_vae.py: script for training the VAE model from vae.py
+- cluster_database.py: functions and scripts for clustering the images using the encoded attributes
+- encode_images.py: main script to encode the image into an n-sized vector (in our case, 16)
+- img_encoder.py: Image Encoder class for encode_images.py
+- utils.py: helper functions for reading the images from a folder, etc.
+- webapp_helper.py: a dump of critical functions embedded in the backend application for serving the model.
+- notebooks/*.ipynb: A scratch notebook used in Google Colab from training to encoding
+
 # Abstract
 The author proposes using Variational Autoencoders (VAE) where the author exploits its capability to regularisethe latent space for generating new samples from the distribution and to generate a latent representation of data as features and introduces two methods in utilizing the latent variables
 for similar image retrieval, recommendation. This enables a base framework that can be used for the e-commerce industry that implements collaborative design for product styles, product clustering, image retrieval and recommender systems using only one architecture to solve multiple problems.
